@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./build/tailwind.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- //-----------------------------------navbar start-----------------------------------// -->
+    <nav class="flex items-center justify-between flex-wrap  p-6">
+        <div class="flex items-center flex-shrink-0  mr-6">
+            <span class="font-semibold text-xl tracking-tight">Tesla</span>
+        </div>
+        <div class="block lg:hidden">
+            <button class="flex items-center px-3 py-2 border rounded  border-teal-400 hover:text-white hover:border-white">
+					<svg
+						class="fill-current h-3 w-3"
+						viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<title>Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto inline">
+            <div class="text-sm lg:flex-grow">
+                <div class="flex justify-center w-6/12 m-auto text-lg font-normal">
+                    <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-opacity-50 mr-4">
+							Model S
+						</a>
+                    <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-opacity-50 mr-4">
+							Model 3
+						</a>
+                    <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-opacity-50 mr-4">
+							Model X
+						</a>
+                    <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-opacity-50 mr-4">
+							Model Y
+						</a>
+                </div>
+            </div>
+            <div class="flex justify-end items-center flex-shrink-0 text-lg font-normal">
+                <a href="#responsive-header" class="block mt-4 mr-4 lg:inline-block lg:mt-0 ">
+                    Shop
+                </a>
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 ">
+                    Account
+                </a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- //-----------------------------------navbar end-----------------------------------// -->
+    <!-- //-----------------------------------main container start-----------------------------------// -->
+    <div class=" flex mt-20 mx-20">
+        <div class="w-2/3">
+            <div class="mx-20">
+                <h1 class="font-medium text-5xl">2016 Model S <span class="font-light">75</span></h1>
+                <div class="text-left pt-6">
+                    <p>79,047 miles</p>
+                    <p class="text-gray-600">Located in Burbank, CA</p>
+                </div>
+                <div class="mt-24">
+                    <img class=" h-auto w-full" src="build/img/tesla.png" alt="">
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="text-center">
+                        <p class="font-bold text-3xl">5.5 <span class="font-light"> sec</span></p>
+                        <p class="text-lg">0-60mpn</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-bold text-3xl">5.5 <span class="font-light"> sec</span></p>
+                        <p class="text-lg">0-60mpn</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-bold text-3xl">5.5 <span class="font-light"> sec</span></p>
+                        <p class="text-lg">0-60mpn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20">
+                <p class="font-bold text-2xl text-gray-800">key Features</p>
+                <p class="font-medium text-medium text-gray-800 py-2">Solid Black Paint</p>
+                <p class="font-medium text-medium text-gray-800 py-2">19" Silver Slipstream Wheels</p>
+                <p class="font-medium text-medium text-gray-800 py-2">Multi-Pattern Black Seats</p>
+                <p class="font-medium text-medium text-gray-800 py-2">Autopilot with convenience features</p>
+                <p class="font-medium text-medium text-gray-800 py-2">Body Color Roof</p>
+                <p class="font-medium text-medium text-gray-800 py-2">HEPA Air Filtration System</p>
+                <p class="font-medium text-medium text-gray-800 py-2">Keyless Entry</p>
+                <p class="font-medium text-medium text-gray-800 py-2">Power Liftgate</p>
+                <p class="font-medium text-medium text-gray-800 py-2">GPS Enabled Homelink</p>
+                <p class="font-medium text-medium text-gray-800 py-2">Dark Ash Wood Décor</p>
+                <p class="font-medium text-medium text-gray-800 py-2">Integrated Center Console</p>
+                <p class="font-medium text-medium text-gray-800 py-2">Black Headliner</p>
+                <p class="font-small text-xs text-gray-800  mt-2 py-2">* Figures based on testing new vehicles to EPA standards. Vehicle range may change depending on battery age and condition, vehicle configuration, driving style, environmental and climate change.</p>
+            </div>
+        </div>
+        <!-- //-----------------------------------main container end-----------------------------------// -->
+        <!-- //-----------------------------------aside start-----------------------------------// -->
+
+        <div class="w-1/3 ml-56 mr-20 ">
+
+            <div class="text-left">
+                <p class="font-normal text-4xl inline mr-2">$<span>38,700</span></p>
+                <p class="font-light text-2xl inline m-2">$<span>527</span>/mo</p>
+                <p class="font-light text-sm inline text-gray-800 pb-px">$100 Order Fee and no est.</p>
+                <p class="font-light text-sm inline text-gray-800 pb-px">Transportation Fee to your nearest</p>
+                <p class="font-light text-sm inline text-gray-800 pb-px">delivery location</p>
+            </div>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-4 rounded-full w-full">
+                Buy
+              </button>
+            <div class="my-8">
+                <p class="font-bold text-gray-800 text-xl">Warranty</p>
+                <p class="font-thin text-4xl">2 years / 20,953 miles</p>
+                <p class="font-bold text-gray-800 text-md mb-2">Extended Limited Warranty</p>
+                <p class="text-gray-800 text-md">Covers 2 years from when you take delivery or up to 100,000 total miles on the vehicle's odometer. Battery & drive unit warranty valid through June 2024, unlimited miles.</p>
+            </div>
+            <div class="mb-8">
+                <p class="font-bold text-md text-gray-800 pb-4"><i class="fas fa-plus-circle mr-2"></i>Ordering & Delivery Process</p>
+                <p class="font-bold text-md text-gray-800 pb-4"><i class="fas fa-plus-circle mr-2"></i>Mechanical & Cosmetic Standards</p>
+                <p class="font-bold text-md text-gray-800 pb-4"><i class="fas fa-plus-circle mr-2"></i>30-day Premium Connectivity Trial</p>
+            </div>
+            <div class="mb-3">
+                <p class="font-bold text-sm text-gray-800 pb-4">Clean History</p>
+                <p class="font-light text-md text-gray-800 pb-4">This vehicle has a clean history verified by a third party</p>
+            </div>
+            <div class="mb-3">
+                <p class="font-bold text-sm text-gray-800">VIN</p>
+                <p class="font-light text-md text-gray-800">5YJSA1E16GF148338</p>
+                <p class="font-light text-md text-gray-800 pb-4">* Information shown applies to this VIN.</p>
+            </div>
+            <div class="mb-3">
+                <p class="font-light text-md text-gray-800 pb-4">For more information on this Model S, request a callback</p>
+            </div>
+
+        </div>
+
+        <!-- //-----------------------------------aside end-----------------------------------// -->
+    </div>
+
+</body>
+
+</html>
