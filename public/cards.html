@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./build/tailwind.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- //-----------------------------------navbar start-----------------------------------// -->
+    <nav class="flex items-center justify-between flex-wrap  p-6">
+        <div class="flex items-center flex-shrink-0  mr-6">
+            <span class="font-semibold text-xl tracking-tight">IDEALMOTORS</span>
+        </div>
+        <div class="block lg:hidden">
+            <button id="dropDownIcon" class="flex items-center px-3 py-2 border rounded text-black">
+					<svg
+						class="fill-current h-3 w-3"
+						viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg">
+						<title >Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+        </div>
+        <div id="mobileDropDown" class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto inline">
+            <div class="text-sm lg:flex-grow">
+                <div class="lg:flex lg:justify-center lg:w-6/12 lg:m-auto text-lg font-normal">
+                    <a href="#responsive-header" class="text-right block mt-4 lg:inline-block lg:mt-0 lg:mr-4 hover:text-opacity-50 ">
+							Model S
+						</a>
+                    <a href="#responsive-header" class="text-right block mt-4 lg:inline-block lg:mt-0 lg:mr-4 hover:text-opacity-50">
+							Model 3
+						</a>
+                    <a href="#responsive-header" class="text-right block mt-4 lg:inline-block lg:mt-0 lg:mr-4 hover:text-opacity-50">
+							Model X
+						</a>
+                    <a href="#responsive-header" class="text-right block mt-4 lg:inline-block lg:mt-0 lg:mr-4 hover:text-opacity-50">
+							Model Y
+						</a>
+                </div>
+            </div>
+            <div class="lg:flex lg:justify-end items-center flex-shrink-0 text-lg font-normal">
+                <a href="#responsive-header" class="text-right block mt-4 lg:mr-4 lg:inline-block lg:mt-0 ">
+                    Shop
+                </a>
+                <a href="#responsive-header" class="text-right block mt-4 lg:inline-block lg:mt-0 ">
+                    Account
+                </a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- //-----------------------------------navbar end-----------------------------------// -->
+    <!-- //-----------------------------------Header start-----------------------------------// -->
+    <div class="mt-2 mx-2 md:flex md:mt-6 md:mx-6 lg:mt-0 lg:mx-20">
+        <p class="text-5xl w-8/12">Inventory</p>
+        <div class="w-4/12">
+            <button class="text-center w-2/3 inline bg-gray-300 hover:bg-gray-700 text-black text-left font-normal py-2 px-4 my-4 rounded-full w-1/2 text-base">
+            Price: low to high<i class="fas fa-chevron-down ml-8"></i>
+          </button>
+            <div class="inline w-1/3 ml-6">
+                <button class=" text-gray-800 font-bold py-1 px-2 rounded-l border-r-2">
+                <i class="fas fa-plus-square"></i>
+              </button>
+                <button class="text-gray-800 font-bold py-1 px-2 rounded-r">
+               <i class="fas fa-minus-square"></i>
+              </button>
+            </div>
+        </div>
+    </div>
+    <!-- //-----------------------------------Header end-----------------------------------// -->
+    <!-- //-----------------------------------main container start-----------------------------------// -->
+    <main class="py-6 bg-gray-200 flex justify-between">
+        <!-- //-----------------------------------aside start-----------------------------------// -->
+        <div class="w-auto m-6 ml-10">
+            <p class="text-gray-800 text-lg ml-4 mb-2">Delivery ZIP Code <i class="fas fa-info-circle "></i></p>
+            <input class="w-64 bg:white rounded-full py-2 mb-6" id="username" type="text" placeholder="   92007">
+            <div class="grid grid-cols-2">
+                <div class="">
+                    <p class="text-gray-800 text-lg font-bold">Models</p>
+                    <div class="block">
+                        <input type="radio" class="form-radio" name="accountType" value="personal">
+                        <span class="ml-2">Model S</span>
+                    </div>
+                    <div class="block"> <input type="radio" class="form-radio" name="accountType" value="personal">
+                        <span class="ml-2">Model 3</span>
+                    </div>
+                    <div class="block"> <input type="radio" class="form-radio" name="accountType" value="personal">
+                        <span class="ml-2">Model X</span></div>
+                </div>
+                <div class="">
+                    <p class="text-gray-800 text-lg font-bold w-48">Inventory Type</p>
+                    <div class="block">
+                        <input type="radio" class="form-radio" name="accountType" value="personal">
+                        <span class="ml-2">New</span>
+                    </div>
+                    <div class="block"> <input type="radio" class="form-radio" name="accountType" value="personal">
+                        <span class="ml-2">Used</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="text-gray-800 text-lg font-bold mt-8">Trim</p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <!-- //-----------------------------------aside end-----------------------------------// -->
+
+        <!-- //-----------------------------------center start-----------------------------------// -->
+        <div class="w-full mt-2 ml-8 ">
+            <p class="text-sm "><i class="fas fa-info-circle "></i>Order online for touchless delivery. Learn more</p>
+
+
+            <div class="flex flex-wrap justify-start">
+                <!-- //-----------------------------------Card start-----------------------------------// -->
+                <div class="p-5 bg-white rounded w-full md:w-5/12 md:m-4">
+                    <div class="flex justify-between">
+                        <div>
+                            <h1 class="font-bold text-xl">2016 Model S <span class="">75</span></h1>
+                            <div class="">
+                                <p class="text-sm">79,047 miles</p>
+                                <p class="text-sm" ">Located in Burbank, CA</p>
+                            </div>
+                        </div>
+                        <div class="text-right ">
+                            <p class="font-bold text-xl ">$<span>38,700</span></p>
+                            <p class="text-sm "">$<span>527</span>/mo</p>
+                                <p class="text-sm" ">No Est. Transport Fee</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 ">
+                        <img class="flex-shrink-0 h-auto w-10/12 m-auto " src="build/img/tesla.png " alt=" ">
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 mt-8 ">
+                        <div class="text-center border-r-2 ">
+                            <p class="font-bold text-xl ">5.5 <span class="font-light text-2xl ">sec</span></p>
+                            <p class="text-sm ">0-60mpn</p>
+                        </div>
+                        <div class="text-center border-r-2 ">
+                            <p class="font-bold text-xl ">140 <span class="font-light text-2xl ">mph</span></p>
+                            <p class="text-sm ">Top Speed</p>
+                        </div>
+                        <div class="text-center ">
+                            <p class="font-bold text-xl ">249 <span class="font-light text-2xl ">mi</span></p>
+                            <p class="text-sm ">Range (EPA)</p>
+                        </div>
+                    </div>
+
+                    <div>
+                    </div>
+                    <div class="grid grid-cols-2 ">
+                        <div class="mt-6 ">
+                            <p class="font-medium text-xs text-gray-800 pb-2 ">Solid Black Paint</p>
+                            <p class="font-medium text-xs text-gray-800 pb-2 ">19" Silver Slipstream Wheels</p>
+                                    <p class="font-medium text-xs text-gray-800 pb-2">Multi-Pattern Black Seats</p>
+                                    <p class="font-medium text-xs text-gray-800 pb-2">Autopilot with convenience features</p>
+                                    <p class="font-medium text-xs text-gray-800 pb-2">Body Color Roof</p>
+                                    <p class="font-medium text-xs text-gray-800 pb-2">HEPA Air Filtration System</p>
+                                    <p class="font-medium text-xs text-gray-800 pb-2">Keyless Entry</p>
+                            </div>
+                            <div class="mt-6">
+                                <p class="font-medium text-xs text-gray-800 pb-2">Autopilot with convenience features</p>
+                                <p class="font-medium text-xs text-gray-800 pb-2">Clean History</p>
+                                <p class="font-medium text-xs text-gray-800 pb-2">30-day Premium Connectivity Trial</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- //-----------------------------------Card end-----------------------------------// -->
+                    <!-- //-----------------------------------Card start-----------------------------------// -->
+                    <div class="p-5 bg-white rounded w-full md:w-5/12 md:m-4">
+                        <div class="flex justify-between">
+                            <div>
+                                <h1 class="font-bold text-xl">2016 Model S <span class="">75</span></h1>
+                                <div class="">
+                                    <p class="text-sm">79,047 miles</p>
+                                    <p class="text-sm" ">Located in Burbank, CA</p>
+                            </div>
+                        </div>
+                        <div class="text-right ">
+                            <p class="font-bold text-xl ">$<span>38,700</span></p>
+                            <p class="text-sm "">$<span>527</span>/mo</p>
+                                    <p class="text-sm" ">No Est. Transport Fee</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 ">
+                        <img class="flex-shrink-0 h-auto w-10/12 m-auto " src="build/img/tesla.png " alt=" ">
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 mt-8 ">
+                        <div class="text-center border-r-2 ">
+                            <p class="font-bold text-xl ">5.5 <span class="font-light text-2xl ">sec</span></p>
+                            <p class="text-sm ">0-60mpn</p>
+                        </div>
+                        <div class="text-center border-r-2 ">
+                            <p class="font-bold text-xl ">140 <span class="font-light text-2xl ">mph</span></p>
+                            <p class="text-sm ">Top Speed</p>
+                        </div>
+                        <div class="text-center ">
+                            <p class="font-bold text-xl ">249 <span class="font-light text-2xl ">mi</span></p>
+                            <p class="text-sm ">Range (EPA)</p>
+                        </div>
+                    </div>
+
+                    <div>
+                    </div>
+                    <div class="grid grid-cols-2 ">
+                        <div class="mt-6 ">
+                            <p class="font-medium text-xs text-gray-800 pb-2 ">Solid Black Paint</p>
+                            <p class="font-medium text-xs text-gray-800 pb-2 ">19" Silver Slipstream Wheels</p>
+                                        <p class="font-medium text-xs text-gray-800 pb-2">Multi-Pattern Black Seats</p>
+                                        <p class="font-medium text-xs text-gray-800 pb-2">Autopilot with convenience features</p>
+                                        <p class="font-medium text-xs text-gray-800 pb-2">Body Color Roof</p>
+                                        <p class="font-medium text-xs text-gray-800 pb-2">HEPA Air Filtration System</p>
+                                        <p class="font-medium text-xs text-gray-800 pb-2">Keyless Entry</p>
+                                </div>
+                                <div class="mt-6">
+                                    <p class="font-medium text-xs text-gray-800 pb-2">Autopilot with convenience features</p>
+                                    <p class="font-medium text-xs text-gray-800 pb-2">Clean History</p>
+                                    <p class="font-medium text-xs text-gray-800 pb-2">30-day Premium Connectivity Trial</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- //-----------------------------------Card end-----------------------------------// -->
+                    </div>
+                </div>
+
+                <!-- //-----------------------------------center end-----------------------------------// -->
+
+    </main>
+    <!-- //-----------------------------------main container end-----------------------------------// -->
+
+    <!-- //-----------------------------------footer start-----------------------------------// -->
+    </div>
+    <footer class="text-center md:text-left md:flex md:justify-center my-8 ">
+        <p class="m-2 md:m-0 md:mr-4 text-md ">IdealMotors</p>
+        <p class="m-2 md:m-0 md:mr-4 text-md ">Privacy & Legal</p>
+        <p class="m-2 md:m-0 md:mr-4 text-md ">Contact</p>
+    </footer>
+    <!-- //-----------------------------------footer end-----------------------------------// -->
+
+
+
+
+
+    <style>
+        .active {
+            display: block;
+        }
+    </style>
+
+    <script>
+        let hamburger = document.getElementById("dropDownIcon ");
+
+        let mobileMenu = document.getElementById("mobileDropDown ");
+
+        hamburger.addEventListener("click ", function() {
+            mobileMenu.classList.toggle("active ");
+            console.log("working ")
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js "></script>
+
+</body>
+
+</html>
