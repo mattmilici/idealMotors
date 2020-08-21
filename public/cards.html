@@ -12,7 +12,7 @@
 <body>
 
     <!-- //-----------------------------------navbar start-----------------------------------// -->
-    <nav class="flex items-center justify-between flex-wrap  p-6">
+    <nav class="flex items-center justify-between flex-wrap  p-4 md:p-6">
         <div class="flex items-center flex-shrink-0  mr-6">
             <span class="font-semibold text-xl tracking-tight">IDEALMOTORS</span>
         </div>
@@ -57,9 +57,9 @@
     </nav>
     <!-- //-----------------------------------navbar end-----------------------------------// -->
     <!-- //-----------------------------------Header start-----------------------------------// -->
-    <div class="mt-2 mx-2 md:flex md:mt-6 md:mx-6 lg:mt-0 lg:mx-20">
-        <p class="text-5xl w-8/12">Inventory</p>
-        <div class="w-4/12">
+    <div class="mt-0 md:mt-2 mx-2 md:flex md:mt-6 md:mx-6 lg:mt-0 lg:mx-20">
+        <p class="text-center md:text-left text-5xl w-auto md:w-7/12">Inventory</p>
+        <div class="w-auto text-center md:text-left m-auto md:w-5/12">
             <button class="text-center w-2/3 inline bg-gray-300 hover:bg-gray-700 text-black text-left font-normal py-2 px-4 my-4 rounded-full w-1/2 text-base">
             Price: low to high<i class="fas fa-chevron-down ml-8"></i>
           </button>
@@ -75,39 +75,40 @@
     </div>
     <!-- //-----------------------------------Header end-----------------------------------// -->
     <!-- //-----------------------------------main container start-----------------------------------// -->
-    <main class="py-6 bg-gray-200 flex justify-between">
+    <main class="py-2 md:py-6 bg-gray-200 flex justify-between">
         <!-- //-----------------------------------aside start-----------------------------------// -->
-        <div class="w-auto m-6 ml-10">
-            <p class="text-gray-800 text-lg ml-4 mb-2">Delivery ZIP Code <i class="fas fa-info-circle "></i></p>
-            <input class="w-64 bg:white rounded-full py-2 mb-6" id="username" type="text" placeholder="   92007">
-            <div class="grid grid-cols-2">
-                <div class="">
-                    <p class="text-gray-800 text-lg font-bold">Models</p>
-                    <div class="block">
-                        <input type="radio" class="form-radio" name="accountType" value="personal">
-                        <span class="ml-2">Model S</span>
+        <div class="hidden md:contents">
+            <div class="w-auto m-6 ml-10">
+                <p class="text-gray-800 text-lg ml-4 mb-2">Delivery ZIP Code <i class="fas fa-info-circle "></i></p>
+                <input class="w-64 bg:white rounded-full py-2 mb-6" id="username" type="text" placeholder="   92007">
+                <div class="grid grid-cols-2">
+                    <div class="">
+                        <p class="text-gray-800 text-lg font-bold">Models</p>
+                        <div class="block">
+                            <input type="radio" class="form-radio" name="accountType" value="personal">
+                            <span class="ml-2">Model S</span>
+                        </div>
+                        <div class="block"> <input type="radio" class="form-radio" name="accountType" value="personal">
+                            <span class="ml-2">Model 3</span>
+                        </div>
+                        <div class="block"> <input type="radio" class="form-radio" name="accountType" value="personal">
+                            <span class="ml-2">Model X</span></div>
                     </div>
-                    <div class="block"> <input type="radio" class="form-radio" name="accountType" value="personal">
-                        <span class="ml-2">Model 3</span>
+                    <div class="">
+                        <p class="text-gray-800 text-lg font-bold w-48">Inventory Type</p>
+                        <div class="block">
+                            <input type="radio" class="form-radio" name="accountType" value="personal">
+                            <span class="ml-2">New</span>
+                        </div>
+                        <div class="block"> <input type="radio" class="form-radio" name="accountType" value="personal">
+                            <span class="ml-2">Used</span>
+                        </div>
                     </div>
-                    <div class="block"> <input type="radio" class="form-radio" name="accountType" value="personal">
-                        <span class="ml-2">Model X</span></div>
                 </div>
-                <div class="">
-                    <p class="text-gray-800 text-lg font-bold w-48">Inventory Type</p>
-                    <div class="block">
-                        <input type="radio" class="form-radio" name="accountType" value="personal">
-                        <span class="ml-2">New</span>
-                    </div>
-                    <div class="block"> <input type="radio" class="form-radio" name="accountType" value="personal">
-                        <span class="ml-2">Used</span>
-                    </div>
+                <div>
+                    <p class="text-gray-800 text-lg font-bold mt-8">Trim</p>
                 </div>
-            </div>
-            <div>
-                <p class="text-gray-800 text-lg font-bold mt-8">Trim</p>
-            </div>
-            <div>
+
 
             </div>
         </div>
@@ -115,12 +116,12 @@
 
         <!-- //-----------------------------------center start-----------------------------------// -->
         <div class="w-full mt-2 ml-8 ">
-            <p class="text-sm "><i class="fas fa-info-circle "></i>Order online for touchless delivery. Learn more</p>
+            <p class="text-sm m-4"><i class="fas fa-info-circle "></i>Order online for touchless delivery. Learn more</p>
 
 
             <div class="flex flex-wrap justify-start">
                 <!-- //-----------------------------------Card start-----------------------------------// -->
-                <div class="p-5 bg-white rounded w-full md:w-5/12 md:m-4">
+                <div class="w-10/12 p-5 bg-white rounded w-full lg:w-5/12 m-4">
                     <div class="flex justify-between">
                         <div>
                             <h1 class="font-bold text-xl">2016 Model S <span class="">75</span></h1>
@@ -175,7 +176,7 @@
 
                     <!-- //-----------------------------------Card end-----------------------------------// -->
                     <!-- //-----------------------------------Card start-----------------------------------// -->
-                    <div class="p-5 bg-white rounded w-full md:w-5/12 md:m-4">
+                    <div class="w-10/12 p-5 bg-white rounded w-full lg:w-5/12 m-4">
                         <div class="flex justify-between">
                             <div>
                                 <h1 class="font-bold text-xl">2016 Model S <span class="">75</span></h1>
